@@ -12,4 +12,12 @@ app.use('/api/v1/events', eventsRouter);
 
 const port = process.env.PORT || 3000;
 
-app.listen(port, () => console.log(`Server listening on PORT: ${port}`));
+const start = async () => {
+  try {
+    app.listen(port, () => console.log(`Server listening on PORT: ${port}`));
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+start();
