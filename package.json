@@ -1,0 +1,19 @@
+{
+  "name": "eventschamp",
+  "version": "1.0.0",
+  "description": "Web application that displays all types of events nearby",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jon-Felipe/EventsChamp.git"
+  },
+  "author": "Jon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jon-Felipe/EventsChamp/issues"
+  },
+  "homepage": "https://github.com/Jon-Felipe/EventsChamp#readme"
+}
