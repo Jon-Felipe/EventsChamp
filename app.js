@@ -7,6 +7,8 @@ const app = express();
 // routers
 const eventsRouter = require('./routes/events');
 
+app.use(express.json());
+
 // routes
 app.use('/api/v1/events', eventsRouter);
 
