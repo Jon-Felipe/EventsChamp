@@ -1,3 +1,4 @@
+require('dotenv').config();
 const connectDB = require('./db/connect');
 const Event = require('./models/Events');
 const mockData = require('./mock-data.json');
