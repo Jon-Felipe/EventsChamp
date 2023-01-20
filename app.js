@@ -15,7 +15,7 @@ app.use(express.json());
 // routes
 app.use('/api/v1/events', eventsRouter);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 const start = async () => {
   try {
