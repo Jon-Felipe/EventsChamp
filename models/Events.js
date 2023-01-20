@@ -22,11 +22,10 @@ const EventSchema = mongoose.Schema(
       enum: ['showing', 'upcoming', 'expired'],
       default: 'upcoming',
     },
-    eventLocation: {
+    eventCountry: {
       type: String,
-      default: 'my location',
+      default: 'my country',
       required: true,
-      maxLength: 20,
       trim: true,
     },
     eventVenue: {
