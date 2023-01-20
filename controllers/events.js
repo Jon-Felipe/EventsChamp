@@ -6,7 +6,9 @@ const Event = require('../models/Events');
 // @route   GET /api/v1/events
 // @access  Public
 const getAllEvents = async (req, res) => {
-  res.send('get all events');
+  const events = await Event.find({});
+
+  res.status(StatusCodes.OK).json({ events });
 };
 
 // @desc    Fetch single event
