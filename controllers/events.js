@@ -15,7 +15,15 @@ const getAllEvents = async (req, res) => {
 // @route   GET /api/v1/events/:id
 // @access  Public
 const getEvent = async (req, res) => {
-  res.send('get event');
+  const { id } = req.params;
+
+  const event = await Event.findOne({ _id: id });
+
+  if (!event) {
+    res.send('Event not found');
+  }
+
+  res.status(StatusCodes.OK).json({ event });
 };
 
 // @desc    Create event
