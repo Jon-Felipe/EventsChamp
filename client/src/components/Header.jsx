@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
+// extras
+import { links } from '../utils/constants';
+
 const Header = () => {
   return (
     <HeaderWrapper>
@@ -17,18 +20,11 @@ const Header = () => {
       </div>
       <nav className='nav-links'>
         <ul className='link-list'>
-          <li>
-            <a href='/'>Home</a>
-          </li>
-          <li>
-            <a href='/'>About</a>
-          </li>
-          <li>
-            <a href='/'>Contact</a>
-          </li>
-          <li>
-            <a href='/'>FAQs</a>
-          </li>
+          {links.map((link) => (
+            <li key={link.id}>
+              <a href={link.url}>{link.text}</a>
+            </li>
+          ))}
         </ul>
       </nav>
     </HeaderWrapper>
