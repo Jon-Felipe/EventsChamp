@@ -5,7 +5,7 @@
     "price": 34.47,
     "status": "expired",
     "eventCountry": "Venezuela",
-    "eventLocation": "richmond"
+    "eventLocation": "Richmond"
   },
   {
     "name": "Haliaetus vocifer",
@@ -13,7 +13,7 @@
     "price": 27.46,
     "status": "expired",
     "eventCountry": "Argentina",
-    "eventLocation": "igantzi"
+    "eventLocation": "Igantzi"
   },
   {
     "name": "Bassariscus astutus",
@@ -21,7 +21,7 @@
     "price": 80.12,
     "status": "showing",
     "eventCountry": "Brazil",
-    "eventLocation": "wawa"
+    "eventLocation": "Wawa"
   },
   {
     "name": "Bucorvus leadbeateri",
@@ -29,7 +29,7 @@
     "price": 52.97,
     "status": "expired",
     "eventCountry": "Philippines",
-    "eventLocation": "suishan"
+    "eventLocation": "Suishan"
   },
   {
     "name": "Equus burchelli",
@@ -37,7 +37,7 @@
     "price": 70.25,
     "status": "showing",
     "eventCountry": "Ukraine",
-    "eventLocation": "zabrat"
+    "eventLocation": "Zabrat"
   },
   {
     "name": "Oreamnos americanus",
@@ -45,7 +45,7 @@
     "price": 46.89,
     "status": "showing",
     "eventCountry": "Thailand",
-    "eventLocation": "gloucester"
+    "eventLocation": "Gloucester"
   },
   {
     "name": "Coluber constrictor",
@@ -53,7 +53,7 @@
     "price": 76.81,
     "status": "expired",
     "eventCountry": "Portugal",
-    "eventLocation": "grubine"
+    "eventLocation": "Grubine"
   },
   {
     "name": "Lamprotornis chalybaeus",
@@ -61,7 +61,7 @@
     "price": 18.12,
     "status": "expired",
     "eventCountry": "China",
-    "eventLocation": "igantzi"
+    "eventLocation": "Igantzi"
   },
   {
     "name": "Macropus fuliginosus",
@@ -69,7 +69,7 @@
     "price": 63.51,
     "status": "showing",
     "eventCountry": "Serbia",
-    "eventLocation": "zabrat"
+    "eventLocation": "Zabrat"
   },
   {
     "name": "Dendrocitta vagabunda",
@@ -77,6 +77,6 @@
     "price": 12.14,
     "status": "expired",
     "eventCountry": "Uganda",
-    "eventLocation": "wawa"
+    "eventLocation": "Wawa"
   }
 ]
