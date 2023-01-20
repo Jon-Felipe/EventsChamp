@@ -5,7 +5,7 @@ const EventSchema = mongoose.Schema(
     name: {
       type: String,
       required: [true, 'Please provide a name'],
-      maxLength: 20,
+      maxLength: 30,
       trim: true,
     },
     description: {
@@ -28,7 +28,7 @@ const EventSchema = mongoose.Schema(
       required: true,
       trim: true,
     },
-    eventVenue: {
+    eventLocation: {
       type: String,
       default: 'my venue',
       required: true,
