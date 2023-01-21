@@ -1,6 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import styled from 'styled-components';
 
 // extras
 import { userLinks } from '../utils/constants';
@@ -12,10 +13,10 @@ const Header = () => {
         <ul>
           {userLinks.map((link) => (
             <li key={link.id}>
-              <a href={link.url}>
+              <Link to={link.url}>
                 {link.icon}
                 {link.text}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

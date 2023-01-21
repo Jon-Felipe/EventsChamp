@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 // extras
@@ -10,7 +11,7 @@ const Navbar = () => {
       <ul className='nav-links'>
         {navLinks.map((link) => (
           <li key={link.id}>
-            <a href={link.url}>{link.text}</a>
+            <Link to={link.url}>{link.text}</Link>
           </li>
         ))}
       </ul>
