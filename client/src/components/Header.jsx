@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
+// extras
 import { userLinks } from '../utils/constants';
 
 const Header = () => {
@@ -42,7 +43,6 @@ const Header = () => {
 export default Header;
 
 const HeaderWrapper = styled.header`
-  background-color: var(--grey-50);
   padding: 0.5rem;
   .header-content {
     max-width: 1140px;
