@@ -70,7 +70,7 @@ const HeaderWrapper = styled.header`
     }
     li {
       background-color: var(--amber);
-      padding: 0.8rem;
+      padding: 0.5rem;
       border: 1px solid transparent;
       border-radius: var(--borderRadius);
       box-shadow: var(--shadow-1);
@@ -85,12 +85,10 @@ const HeaderWrapper = styled.header`
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.15rem;
       text-transform: uppercase;
     }
     svg {
       margin-right: 0.5rem;
-      font-size: 1.3rem;
     }
   }
 
