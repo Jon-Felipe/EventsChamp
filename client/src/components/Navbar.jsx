@@ -24,22 +24,25 @@ export default Navbar;
 const NavWrapper = styled.nav`
   background-color: var(--grey-50);
   .nav-links {
-    padding: 0.5rem;
-    li {
-      margin: 1rem auto;
-    }
-    a {
-      font-size: 1.25rem;
-    }
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 1rem;
   }
 
   @media screen and (min-width: 768px) {
     box-shadow: var(--shadow-1);
     .nav-links {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: none;
+      justify-items: center;
+      a {
+        font-size: 1.2rem;
+      }
+      a:hover {
+        color: var(--primary-500);
+        transition: var(--transition);
+      }
     }
   }
 `;

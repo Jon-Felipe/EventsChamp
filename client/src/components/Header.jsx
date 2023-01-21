@@ -69,7 +69,7 @@ const HeaderWrapper = styled.header`
       grid-column-gap: 1rem;
     }
     li {
-      background-color: var(--amber);
+      background-color: var(--primary-500);
       padding: 0.5rem;
       border: 1px solid transparent;
       border-radius: var(--borderRadius);
@@ -78,7 +78,7 @@ const HeaderWrapper = styled.header`
     }
     li:hover {
       background-color: var(--white);
-      border: 1px solid var(--amber);
+      border: 1px solid var(--primary-500);
       transition: var(--transition);
     }
     a {
