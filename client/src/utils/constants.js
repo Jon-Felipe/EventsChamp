@@ -1,4 +1,4 @@
-export const links = [
+export const navLinks = [
   {
     id: 1,
     text: 'Home',
@@ -17,6 +17,19 @@ export const links = [
   {
     id: 4,
     text: 'FAQs',
+    url: '',
+  },
+];
+
+export const userLinks = [
+  {
+    id: 1,
+    text: 'SignIn',
+    url: '',
+  },
+  {
+    id: 2,
+    text: 'SignUp',
     url: '',
   },
 ];
