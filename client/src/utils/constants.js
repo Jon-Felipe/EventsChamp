@@ -1,3 +1,6 @@
+import React from 'react';
+import { FaUser, FaUserPlus } from 'react-icons/fa';
+
 export const navLinks = [
   {
     id: 1,
@@ -6,17 +9,22 @@ export const navLinks = [
   },
   {
     id: 2,
-    text: 'About',
+    text: 'Events',
     url: '',
   },
   {
     id: 3,
-    text: 'Contact',
+    text: 'Calendar',
     url: '',
   },
   {
     id: 4,
-    text: 'FAQs',
+    text: 'Venues',
+    url: '',
+  },
+  {
+    id: 5,
+    text: 'Schedules',
     url: '',
   },
 ];
@@ -24,12 +32,14 @@ export const navLinks = [
 export const userLinks = [
   {
     id: 1,
-    text: 'SignIn',
+    text: 'Sign In',
     url: '',
+    icon: <FaUser />,
   },
   {
     id: 2,
-    text: 'SignUp',
+    text: 'Sign Up',
     url: '',
+    icon: <FaUserPlus />,
   },
 ];
