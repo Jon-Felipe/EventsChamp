@@ -14,16 +14,16 @@ html {
 
 :root {
   /* colors */
-  --primary-50: #eff6ff;
-  --primary-100: #dbeafe;
-  --primary-200: #bfdbfe;
-  --primary-300: #93c5fd;
-  --primary-400: #60a5fa;
-  --primary-500: #3b82f6;
-  --primary-600: #2563eb;
-  --primary-700: #1d4ed8;
-  --primary-800: #1e40af;
-  --primary-900: #1e3a8a;
+  --primary-50: #bda9f1;
+  --primary-100: #aa90ee;
+  --primary-200: #9777e9;
+  --primary-300: #8e66f3;
+  --primary-400: #8256f0;
+  --primary-500: #7848f4;
+  --primary-600: #6d41db;
+  --primary-700: #663bd2;
+  --primary-800: #5c37b9;
+  --primary-900: #5331aa;
 
   /* grey */
   --grey-50: #f0f4f8;
@@ -53,7 +53,7 @@ html {
   /* rest of the vars */
   /* --backgroundColor: var(--grey-50); */
   --textColor: var(--grey-900);
-  --borderRadius: 0.35rem;
+  --borderRadius: 1rem;
   --letterSpacing: 3px;
   --transition: 0.3s ease-in-out all;
   --max-width: 1120px;

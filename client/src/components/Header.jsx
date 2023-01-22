@@ -3,40 +3,31 @@ import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
 
-// extras
-import { userLinks } from '../utils/constants';
-
 const Header = () => {
   const UserLinks = () => {
     return (
       <nav className='user-links'>
-        <ul>
-          {userLinks.map((link) => (
-            <li key={link.id}>
-              <Link to={link.url}>
-                {link.icon}
-                {link.text}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <Link to='/login' className='login'>
+          Login
+        </Link>
+        <Link to='/sign-up' className='sign-up'>
+          Sign Up
+        </Link>
       </nav>
     );
   };
 
   return (
     <HeaderWrapper>
-      <div className='header-content'>
-        <div className='header'>
-          <h1>EventChamps</h1>
-          <div className='toggle-btn'>
-            <button>
-              <FaTimes size='2.5rem' />
-            </button>
-          </div>
+      <div className='header'>
+        <h1>EventsChamp</h1>
+        <div className='toggle-btn'>
+          <button>
+            <FaTimes size='2.5rem' />
+          </button>
         </div>
-        <UserLinks />
       </div>
+      <UserLinks />
     </HeaderWrapper>
   );
 };
@@ -44,11 +35,9 @@ const Header = () => {
 export default Header;
 
 const HeaderWrapper = styled.header`
-  padding: 0.5rem;
-  .header-content {
-    max-width: 1140px;
-    margin: 0 auto;
-  }
+  max-width: 1140px;
+  padding: 1rem;
+  margin: 0 auto;
   .header {
     display: flex;
     align-items: center;
@@ -62,47 +51,38 @@ const HeaderWrapper = styled.header`
     }
   }
   .user-links {
-    margin: 1rem auto;
-    ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 1rem;
-    }
-    li {
-      background-color: var(--primary-500);
-      padding: 0.5rem;
-      border: 1px solid transparent;
-      border-radius: var(--borderRadius);
-      box-shadow: var(--shadow-1);
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    a {
+      text-align: center;
+      padding: 0.8rem 1.5rem;
+      font-weight: 700;
+      background-color: transparent;
       cursor: pointer;
     }
-    li:hover {
-      background-color: var(--white);
-      border: 1px solid var(--primary-500);
-      transition: var(--transition);
-    }
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-transform: uppercase;
-    }
-    svg {
-      margin-right: 0.5rem;
+    .sign-up {
+      background-color: var(--primary-500);
+      color: var(--white);
+      border-radius: var(--borderRadius);
     }
   }
 
   @media screen and (min-width: 768px) {
-    .header-content {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header {
+      h1 {
+        font-size: 2.5rem;
+      }
     }
     .toggle-btn {
       display: none;
     }
     .user-links {
-      margin: 0 auto;
+      margin-top: 0;
     }
   }
 `;
