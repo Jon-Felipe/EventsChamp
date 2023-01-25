@@ -41,9 +41,10 @@ const HomeWrapper = styled.main`
     grid-row-gap: 1rem;
     margin-top: 1rem;
   }
-  /* .event-cards {
-    margin: 1rem 0;
-  } */
+  .event-cards {
+    display: grid;
+    grid-row-gap: 1rem;
+  }
 
   @media screen and (min-width: 768px) {
     .event-header {

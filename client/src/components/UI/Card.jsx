@@ -10,4 +10,5 @@ export default Card;
 const CardWrapper = styled.article`
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-1);
+  overflow: hidden;
 `;
