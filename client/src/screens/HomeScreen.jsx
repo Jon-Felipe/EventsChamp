@@ -4,18 +4,26 @@ import styled from 'styled-components';
 
 // components
 import Select from '../components/UI/Select';
+import Event from '../components/Events/Event';
 
 const HomeScreen = () => {
   return (
     <HomeWrapper>
-      {/* Events section */}
-      <section className='events'>
+      {/* Events filter */}
+      <section className='event-header'>
         <h3>Upcoming Events</h3>
         <div className='event-filters'>
           <Select option='Weekdays' />
           <Select option='Event Type' />
           <Select option='Any Category' />
         </div>
+      </section>
+      {/* Event Cards */}
+      <section className='event-cards'>
+        <Event />
+        <Event />
+        <Event />
+        <Event />
       </section>
     </HomeWrapper>
   );
@@ -33,9 +41,12 @@ const HomeWrapper = styled.main`
     grid-row-gap: 1rem;
     margin-top: 1rem;
   }
+  /* .event-cards {
+    margin: 1rem 0;
+  } */
 
   @media screen and (min-width: 768px) {
-    .events {
+    .event-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
