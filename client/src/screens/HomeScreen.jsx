@@ -26,7 +26,11 @@ const HomeScreen = () => {
       <section className='event-cards'>
         {events.map((event) => (
           <Card key={event.id}>
-            <Event title={event.title} desc={event.desc} />
+            <Event
+              title={event.title}
+              location={event.location}
+              date={event.date}
+            />
           </Card>
         ))}
       </section>
@@ -49,7 +53,7 @@ const HomeWrapper = styled.main`
   .event-cards {
     margin-top: 1rem;
     display: grid;
-    grid-row-gap: 1rem;
+    grid-row-gap: 2rem;
   }
 
   @media screen and (min-width: 768px) {
@@ -66,7 +70,7 @@ const HomeWrapper = styled.main`
     }
     .event-cards {
       grid-template-columns: 1fr 1fr;
-      grid-column-gap: 1rem;
+      grid-column-gap: 2rem;
     }
   }
   @media screen and (min-width: 1140px) {
