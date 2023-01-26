@@ -1,10 +1,11 @@
 import React from 'react';
+import { FaHeart } from 'react-icons/fa';
 import styled from 'styled-components';
 
 // extras
 import eventImg from '../../assets/dj.jpg';
 
-const Event = ({ title, location, date }) => {
+const Event = ({ title, location, date, price }) => {
   return (
     <EventWrapper>
       <img src={eventImg} alt='dj deck' />
@@ -17,6 +18,12 @@ const Event = ({ title, location, date }) => {
           <h5>{title}</h5>
           <p>{location}</p>
         </div>
+        <div className='event-blurbs'>
+          <p className='price'>${price.toFixed(2)}</p>
+          <div className='fav-icon'>
+            <FaHeart />
+          </div>
+        </div>
       </div>
     </EventWrapper>
   );
@@ -27,6 +34,7 @@ export default Event;
 const EventWrapper = styled.div`
   display: grid;
   grid-template-rows: 200px 150px;
+  position: relative;
   img {
     width: 100%;
     height: 100%;
@@ -58,6 +66,35 @@ const EventWrapper = styled.div`
     }
     p {
       color: var(--grey-600);
+    }
+  }
+  .event-blurbs {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .price {
+      background-color: var(--white);
+      border-radius: var(--borderRadius);
+      padding: 10px 15px;
+      font-weight: bold;
+      font-size: 0.85rem;
+    }
+    .fav-icon {
+      background-color: var(--white);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        color: var(--red);
+        font-size: 1.2rem;
+      }
     }
   }
   @media screen and (min-width: 768px) {

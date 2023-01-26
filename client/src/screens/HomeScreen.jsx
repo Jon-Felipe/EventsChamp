@@ -30,6 +30,7 @@ const HomeScreen = () => {
               title={event.title}
               location={event.location}
               date={event.date}
+              price={event.price}
             />
           </Card>
         ))}
@@ -51,7 +52,7 @@ const HomeWrapper = styled.main`
     margin-top: 1rem;
   }
   .event-cards {
-    margin-top: 1rem;
+    margin-top: 3rem;
     display: grid;
     grid-row-gap: 2rem;
   }
