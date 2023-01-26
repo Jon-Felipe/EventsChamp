@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 
 // components
-import Header from './components/Header';
+import Header from './components/Layout/Header';
 
 const App = () => {
   return (
