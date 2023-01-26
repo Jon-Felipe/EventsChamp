@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <FooterWrapper>
       {/* Product Links */}
       <div>
-        <p>Product</p>
+        <h4>Product</h4>
         <ul>
           <li>Key Features</li>
           <li>Pricing</li>
@@ -18,7 +19,7 @@ const Footer = () => {
       </div>
       {/* Explore Links */}
       <div>
-        <p>Explore More</p>
+        <h4>Explore More</h4>
         <ul>
           <li>How It Works</li>
           <li>Download App</li>
@@ -27,18 +28,24 @@ const Footer = () => {
           <li>Event Organiser</li>
           <li>Nonprofits & Fundraisers</li>
         </ul>
-        {/* Connect Links */}
-        <div>
-          <p>Connect With Us</p>
-          <ul>
-            <li>Customer Support</li>
-            <li>Download App</li>
-            <li>Event Promoter</li>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-          </ul>
-        </div>
+      </div>
+      {/* Connect Links */}
+      <div>
+        <h4>Connect With Us</h4>
+        <ul>
+          <li>Customer Support</li>
+          <li>Download App</li>
+          <li>Event Promoter</li>
+          <li className='social-link'>
+            <FaFacebook /> Facebook
+          </li>
+          <li className='social-link'>
+            <FaTwitter /> Twitter
+          </li>
+          <li className='social-link'>
+            <FaInstagram /> Instagram
+          </li>
+        </ul>
       </div>
     </FooterWrapper>
   );
@@ -46,4 +53,32 @@ const Footer = () => {
 
 export default Footer;
 
-const FooterWrapper = styled.footer``;
+const FooterWrapper = styled.footer`
+  background-color: var(--blue-dark);
+  padding: 2rem;
+  display: grid;
+  grid-row-gap: 1rem;
+  h4 {
+    color: var(--white);
+  }
+  li {
+    color: #6a7c94;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+  .social-link {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    li:hover {
+      color: var(--white);
+      transition: var(--transition);
+    }
+  }
+`;
