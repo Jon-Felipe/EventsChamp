@@ -6,6 +6,9 @@ import styled from 'styled-components';
 import Select from '../components/UI/Select';
 import Event from '../components/Events/Event';
 
+// extras
+import { events } from '../utils/dummy-data';
+
 const HomeScreen = () => {
   return (
     <HomeWrapper>
@@ -20,10 +23,11 @@ const HomeScreen = () => {
       </section>
       {/* Event Cards */}
       <section className='event-cards'>
-        <Event />
-        <Event />
-        <Event />
-        <Event />
+        {events.map((event) => (
+          <article key={event.id}>
+            <Event {...event} />
+          </article>
+        ))}
       </section>
     </HomeWrapper>
   );
@@ -42,6 +46,7 @@ const HomeWrapper = styled.main`
     margin-top: 1rem;
   }
   .event-cards {
+    margin-top: 1rem;
     display: grid;
     grid-row-gap: 1rem;
   }
@@ -57,6 +62,15 @@ const HomeWrapper = styled.main`
       grid-template-rows: none;
       grid-column-gap: 1rem;
       margin-top: 0;
+    }
+    .event-cards {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 1rem;
+    }
+  }
+  @media screen and (min-width: 1140px) {
+    .event-cards {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 `;

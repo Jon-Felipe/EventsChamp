@@ -7,13 +7,14 @@ import Card from '../UI/Card';
 // extras
 import eventImg from '../../assets/dj.jpg';
 
-const Event = () => {
+const Event = ({ title, desc, image }) => {
   return (
     <Card>
       <EventWrapper>
         <img src={eventImg} alt='dj deck' />
-        <div className='events-content'>
-          <h5>Dream World Wide in Jakarta</h5>
+        <div className='event-content'>
+          <h5>{title}</h5>
+          <p>{desc}</p>
         </div>
       </EventWrapper>
     </Card>
@@ -24,10 +25,16 @@ export default Event;
 
 const EventWrapper = styled.div`
   display: grid;
-  grid-template-rows: 200px 250px;
+  grid-template-rows: 200px 150px;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .event-content {
+    padding: 1rem;
+    p {
+      color: var(--grey-500);
+    }
   }
 `;
