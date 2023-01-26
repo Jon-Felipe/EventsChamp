@@ -20,16 +20,18 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <div className='header'>
-        <h1>
-          <Link to='/'>EventsChamp</Link>
-        </h1>
-        <div className='toggle-btn'>
-          <button>
-            <FaTimes size='2.5rem' />
-          </button>
+        <div className='header-center'>
+          <h1>
+            <Link to='/'>EventsChamp</Link>
+          </h1>
+          <div className='toggle-btn'>
+            <button>
+              <FaTimes size='2.5rem' />
+            </button>
+          </div>
         </div>
+        <UserLinks />
       </div>
-      <UserLinks />
     </HeaderWrapper>
   );
 };
@@ -37,10 +39,16 @@ const Header = () => {
 export default Header;
 
 const HeaderWrapper = styled.header`
-  max-width: 1140px;
   padding: 1rem;
   margin: 0 auto;
+  background-color: var(--white);
+  box-shadow: var(--shadow-1);
   .header {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header-center {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,6 +84,11 @@ const HeaderWrapper = styled.header`
     align-items: center;
     justify-content: space-between;
     .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-center {
       h1 {
         font-size: 2.5rem;
       }

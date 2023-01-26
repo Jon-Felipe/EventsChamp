@@ -23,7 +23,7 @@ const SelectWrapper = styled.div`
     font-weight: 700;
     letter-spacing: 2px;
     border: none;
-    background-color: var(--grey-50);
+    box-shadow: var(--shadow-1);
     border-radius: 0.5rem;
     appearance: none;
     cursor: pointer;

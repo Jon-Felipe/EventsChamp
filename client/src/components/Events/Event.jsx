@@ -35,6 +35,7 @@ const EventWrapper = styled.div`
   display: grid;
   grid-template-rows: 200px 150px;
   position: relative;
+  background-color: var(--white);
   img {
     width: 100%;
     height: 100%;

@@ -26,7 +26,7 @@ html {
   --primary-900: #5331aa;
 
   /* grey */
-  --grey-50: #f0f4f8;
+  --grey-50: #f7fbff;
   --grey-100: #d9e2ec;
   --grey-200: #bcccdc;
   --grey-300: #9fb3c8;
@@ -52,7 +52,11 @@ html {
   --small-text: 0.875rem;
   --extra-small-text: 0.7em;
   /* rest of the vars */
-  /* --backgroundColor: var(--grey-50); */
+  --backgroundColor: linear-gradient(
+    0deg,
+    rgba(236, 236, 236, 1) 0%,
+    rgba(252, 252, 252, 1) 100%
+  );
   --textColor: var(--grey-900);
   --borderRadius: 1rem;
   --letterSpacing: 3px;
