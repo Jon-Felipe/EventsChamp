@@ -1,23 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// components
-import Card from '../UI/Card';
-
 // extras
 import eventImg from '../../assets/dj.jpg';
 
 const Event = ({ title, desc, image }) => {
   return (
-    <Card>
-      <EventWrapper>
-        <img src={eventImg} alt='dj deck' />
-        <div className='event-content'>
-          <h5>{title}</h5>
-          <p>{desc}</p>
-        </div>
-      </EventWrapper>
-    </Card>
+    <EventWrapper>
+      <img src={eventImg} alt='dj deck' />
+      <div className='event-content'>
+        <h5>{title}</h5>
+        <p>{desc}</p>
+      </div>
+    </EventWrapper>
   );
 };
 

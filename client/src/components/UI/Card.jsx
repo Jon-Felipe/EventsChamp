@@ -7,7 +7,7 @@ const Card = ({ children }) => {
 
 export default Card;
 
-const CardWrapper = styled.div`
+const CardWrapper = styled.article`
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-1);
   overflow: hidden;

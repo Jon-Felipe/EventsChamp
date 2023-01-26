@@ -5,6 +5,7 @@ import styled from 'styled-components';
 // components
 import Select from '../components/UI/Select';
 import Event from '../components/Events/Event';
+import Card from '../components/UI/Card';
 
 // extras
 import { events } from '../utils/dummy-data';
@@ -24,9 +25,9 @@ const HomeScreen = () => {
       {/* Event Cards */}
       <section className='event-cards'>
         {events.map((event) => (
-          <article key={event.id}>
-            <Event {...event} />
-          </article>
+          <Card key={event.id}>
+            <Event title={event.title} desc={event.desc} />
+          </Card>
         ))}
       </section>
     </HomeWrapper>
