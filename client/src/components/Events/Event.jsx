@@ -15,7 +15,7 @@ const Event = ({ title, location, date, price }) => {
           <p className='day'>{date.split(' ')[0]}</p>
         </div>
         <div className='event-info'>
-          <h5>{title}</h5>
+          <h4>{title}</h4>
           <p>{location}</p>
         </div>
         <div className='event-blurbs'>
@@ -60,12 +60,15 @@ const EventWrapper = styled.div`
     }
   }
   .event-info {
-    letter-spacing: 2px;
-    h5 {
+    h4 {
       margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
     }
     p {
+      font-size: 1.15rem;
       color: var(--grey-600);
+      letter-spacing: 1px;
     }
   }
   .event-blurbs {
@@ -99,11 +102,11 @@ const EventWrapper = styled.div`
   }
   @media screen and (min-width: 768px) {
     .event-info {
-      h5 {
-        font-size: 1rem;
+      h4 {
+        font-size: 1.2rem;
       }
       p {
-        font-size: 0.85rem;
+        font-size: 0.95rem;
       }
     }
   }
