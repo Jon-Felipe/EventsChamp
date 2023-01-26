@@ -20,7 +20,9 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <div className='header'>
-        <h1>EventsChamp</h1>
+        <h1>
+          <Link to='/'>EventsChamp</Link>
+        </h1>
         <div className='toggle-btn'>
           <button>
             <FaTimes size='2.5rem' />
