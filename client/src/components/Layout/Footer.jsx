@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <FooterWrapper>
+    <footer>
       {/* Product Links */}
       <div>
         <h4>Product</h4>
@@ -47,38 +47,8 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-    </FooterWrapper>
+    </footer>
   );
 };
 
 export default Footer;
-
-const FooterWrapper = styled.footer`
-  background-color: var(--blue-dark);
-  padding: 2rem;
-  display: grid;
-  grid-row-gap: 1rem;
-  h4 {
-    color: var(--white);
-  }
-  li {
-    color: #6a7c94;
-    margin: 1rem 0;
-    cursor: pointer;
-  }
-  .social-link {
-    display: flex;
-    align-items: center;
-    svg {
-      margin-right: 0.5rem;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    li:hover {
-      color: var(--white);
-      transition: var(--transition);
-    }
-  }
-`;

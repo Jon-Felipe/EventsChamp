@@ -1,14 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 
 const Card = ({ children }) => {
-  return <CardWrapper>{children}</CardWrapper>;
+  return <article>{children}</article>;
 };
 
 export default Card;
-
-const CardWrapper = styled.article`
-  border-radius: var(--borderRadius);
-  box-shadow: var(--shadow-1);
-  overflow: hidden;
-`;

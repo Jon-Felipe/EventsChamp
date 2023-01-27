@@ -1,7 +1,5 @@
 import React from 'react';
 
-import styled from 'styled-components';
-
 // components
 import Select from '../components/UI/Select';
 import Event from '../components/Events/Event';
@@ -12,7 +10,7 @@ import { events } from '../utils/dummy-data';
 
 const HomeScreen = () => {
   return (
-    <HomeWrapper>
+    <main>
       {/* Events filter */}
       <section className='event-header'>
         <h3>Upcoming Events</h3>
@@ -35,48 +33,8 @@ const HomeScreen = () => {
           </Card>
         ))}
       </section>
-    </HomeWrapper>
+    </main>
   );
 };
 
 export default HomeScreen;
-
-const HomeWrapper = styled.main`
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 1rem;
-  .event-filters {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-row-gap: 1rem;
-    margin-top: 1rem;
-  }
-  .event-cards {
-    margin-top: 3rem;
-    display: grid;
-    grid-row-gap: 2rem;
-  }
-
-  @media screen and (min-width: 768px) {
-    .event-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .event-filters {
-      grid-template-columns: repeat(3, 145px);
-      grid-template-rows: none;
-      grid-column-gap: 1rem;
-      margin-top: 0;
-    }
-    .event-cards {
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 2rem;
-    }
-  }
-  @media screen and (min-width: 1140px) {
-    .event-cards {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-`;
