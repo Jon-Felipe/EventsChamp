@@ -4,46 +4,80 @@ import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='bg-indigo-900 p-8 grid grid-rows-3 sm:grid-rows-none sm:grid-cols-3 sm:justify-items-center'>
       {/* Product Links */}
       <div>
-        <h4>Product</h4>
+        <h4 className='text-white font-semibold text-2xl underline'>Product</h4>
         <ul>
-          <li>Key Features</li>
-          <li>Pricing</li>
-          <li>Event Ticketing</li>
-          <li>Booking</li>
-          <li>Online Promotion</li>
-          <li>Developers</li>
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Key Features
+          </li>
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Pricing
+          </li>
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Event Ticketing
+          </li>
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Booking
+          </li>
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Online Promotion
+          </li>
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Developers
+          </li>
         </ul>
       </div>
       {/* Explore Links */}
       <div>
-        <h4>Explore More</h4>
+        <h4 className='text-white font-semibold text-2xl underline'>
+          Explore More
+        </h4>
         <ul>
-          <li>How It Works</li>
-          <li>Download App</li>
-          <li>Event Promoter</li>
-          <li>Sell Tickets</li>
-          <li>Event Organiser</li>
-          <li>Nonprofits & Fundraisers</li>
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            How It Works
+          </li>
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Download App
+          </li>
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Event Promoter
+          </li>
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Sell Tickets
+          </li>
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Event Organiser
+          </li>
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Nonprofits & Fundraisers
+          </li>
         </ul>
       </div>
       {/* Connect Links */}
       <div>
-        <h4>Connect With Us</h4>
+        <h4 className='text-white font-semibold text-2xl underline'>
+          Connect With Us
+        </h4>
         <ul>
-          <li>Customer Support</li>
-          <li>Download App</li>
-          <li>Event Promoter</li>
-          <li className='social-link'>
-            <FaFacebook /> Facebook
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Customer Support
           </li>
-          <li className='social-link'>
-            <FaTwitter /> Twitter
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Download App
           </li>
-          <li className='social-link'>
-            <FaInstagram /> Instagram
+          <li className='text-slate-300 font-semibold my-2 cursor-pointer hover:text-white'>
+            Event Promoter
+          </li>
+          <li className='text-slate-300 flex items-center cursor-pointer hover:text-white'>
+            <FaFacebook className='mr-2' /> Facebook
+          </li>
+          <li className='text-slate-300 flex items-center cursor-pointer hover:text-white'>
+            <FaTwitter className='mr-2' /> Twitter
+          </li>
+          <li className='text-slate-300 flex items-center cursor-pointer hover:text-white'>
+            <FaInstagram className='mr-2' /> Instagram
           </li>
         </ul>
       </div>
