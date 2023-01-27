@@ -31,6 +31,7 @@ const HomeScreen = () => {
             venue={event.venue}
             date={event.date}
             price={event.price}
+            isFavourite={event.isFavourite}
           />
         ))}
       </article>

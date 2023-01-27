@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHeart } from 'react-icons/fa';
+import { FaHeart, FaRegHeart } from 'react-icons/fa';
 
 // components
 import Card from '../UI/Card';
@@ -7,7 +7,7 @@ import Card from '../UI/Card';
 // extras
 import eventImg from '../../assets/dj.jpg';
 
-const Event = ({ title, location, date, venue, price }) => {
+const Event = ({ title, location, date, venue, price, isFavourite }) => {
   return (
     <Card>
       <div className='relative'>
@@ -32,8 +32,18 @@ const Event = ({ title, location, date, venue, price }) => {
             <p className='bg-white rounded-md px-4 py-2 font-bold'>
               ${price.toFixed(2)}
             </p>
-            <div className='bg-white text-red-500 rounded-full p-4'>
-              <FaHeart size='1.3rem' className='cursor-pointer' />
+            <div className='bg-white rounded-full p-4'>
+              {isFavourite ? (
+                <FaHeart
+                  size='1.3rem'
+                  className='text-red-500 cursor-pointer hover:scale-125 ease-in-out duration-300'
+                />
+              ) : (
+                <FaRegHeart
+                  size='1.3rem'
+                  className='cursor-pointer hover:scale-125 ease-in-out duration-300'
+                />
+              )}
             </div>
           </div>
         </div>

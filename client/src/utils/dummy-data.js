@@ -6,6 +6,7 @@ export const events = [
     venue: 'Lasndl ldsknandsadmn slndla',
     price: 10.0,
     date: '18 Sep',
+    isFavourite: false,
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const events = [
     venue: 'Lasndl ldsknandsadmn slndla',
     price: 10.0,
     date: '18 Sep',
+    isFavourite: true,
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const events = [
     venue: 'Lasndl ldsknand',
     price: 10.0,
     date: '18 Sep',
+    isFavourite: false,
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const events = [
     venue: 'Lasndl ldsknandsadmn slndla',
     price: 10.0,
     date: '18 Sep',
+    isFavourite: true,
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const events = [
     venue: 'Lasndl ldsknandsadmn slndla',
     price: 10.0,
     date: '18 Sep',
+    isFavourite: false,
   },
   {
     id: 6,
@@ -46,5 +51,6 @@ export const events = [
     venue: 'Lasndl ldsknandsadmn slndla',
     price: 10.0,
     date: '18 Sep',
+    isFavourite: true,
   },
 ];
