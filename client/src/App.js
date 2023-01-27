@@ -12,9 +12,9 @@ const App = () => {
   return (
     <Router>
       <Header />
-      {/* <Routes>
+      <Routes>
         <Route path='/' element={<HomeScreen />} />
-      </Routes> */}
+      </Routes>
       {/* <Footer /> */}
     </Router>
   );

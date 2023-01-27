@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <header className='p-4 shadow-md'>
-      <div className='sm:flex sm:justify-between sm:items-center sm:max-w-6xl sm:mx-auto'>
+      <div className='max-w-6xl mx-auto sm:flex sm:justify-between sm:items-center'>
         <div className='flex items-center justify-between'>
           <Link to='/' className='font-bold text-4xl'>
             EventsChamps

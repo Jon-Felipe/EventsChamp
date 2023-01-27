@@ -10,18 +10,20 @@ import { events } from '../utils/dummy-data';
 
 const HomeScreen = () => {
   return (
-    <main>
+    <section className='p-4'>
       {/* Events filter */}
-      <section className='event-header'>
-        <h3>Upcoming Events</h3>
-        <div className='event-filters'>
+      <article className='max-w-6xl mx-auto sm:flex sm:items-center sm:justify-between'>
+        <h3 className='text-4xl font-bold text-center sm:text-2xl md:text-3xl'>
+          Upcoming Events
+        </h3>
+        <div className='mt-8 grid grid-cols-3 gap-x-2 sm:mt-0 sm:grid-cols-[130px_130px_130px] md:grid-cols-[1fr_1fr_1fr]'>
           <Select option='Weekdays' />
           <Select option='Event Type' />
           <Select option='Any Category' />
         </div>
-      </section>
+      </article>
       {/* Event Cards */}
-      <section className='event-cards'>
+      {/* <section>
         {events.map((event) => (
           <Card key={event.id}>
             <Event
@@ -32,8 +34,8 @@ const HomeScreen = () => {
             />
           </Card>
         ))}
-      </section>
-    </main>
+      </section> */}
+    </section>
   );
 };
 
