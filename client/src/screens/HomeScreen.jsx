@@ -26,6 +26,7 @@ const HomeScreen = () => {
         {events.map((event) => (
           <Event
             key={event.id}
+            id={event.id}
             title={event.title}
             location={event.location}
             venue={event.venue}

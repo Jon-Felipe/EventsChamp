@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaHeart, FaRegHeart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaHeart, FaRegHeart, FaArrowRight } from 'react-icons/fa';
 
 // components
 import Card from '../UI/Card';
@@ -7,7 +8,7 @@ import Card from '../UI/Card';
 // extras
 import eventImg from '../../assets/dj.jpg';
 
-const Event = ({ title, location, date, venue, price, isFavourite }) => {
+const Event = ({ id, title, location, date, venue, price, isFavourite }) => {
   return (
     <Card>
       <div className='relative'>
@@ -32,18 +33,22 @@ const Event = ({ title, location, date, venue, price, isFavourite }) => {
             <p className='bg-white rounded-md px-4 py-2 font-bold'>
               ${price.toFixed(2)}
             </p>
-            <div className='bg-white rounded-full p-4'>
+            <div className='flex items-center'>
               {isFavourite ? (
-                <FaHeart
-                  size='1.3rem'
-                  className='text-red-500 cursor-pointer hover:scale-125 ease-in-out duration-300'
-                />
+                <div className='bg-white rounded-full p-3 hover:scale-125 ease-in-out duration-300 cursor-pointer'>
+                  <FaHeart size='1.3rem' className='text-red-500' />
+                </div>
               ) : (
-                <FaRegHeart
-                  size='1.3rem'
-                  className='cursor-pointer hover:scale-125 ease-in-out duration-300'
-                />
+                <div className='bg-white rounded-full p-3 hover:scale-125 ease-in-out duration-300 cursor-pointer'>
+                  <FaRegHeart size='1.3rem' />
+                </div>
               )}
+              <Link
+                to={`/${id}`}
+                className='bg-white rounded-full p-3 ml-3 hover:scale-125 ease-in-out duration-300'
+              >
+                <FaArrowRight size='1.3rem' />
+              </Link>
             </div>
           </div>
         </div>
