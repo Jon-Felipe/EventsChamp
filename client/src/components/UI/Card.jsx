@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Card = ({ children }) => {
-  return <article>{children}</article>;
+  return <div className='rounded-xl shadow-md overflow-hidden'>{children}</div>;
 };
 
 export default Card;

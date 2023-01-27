@@ -23,18 +23,18 @@ const HomeScreen = () => {
         </div>
       </article>
       {/* Event Cards */}
-      {/* <section>
+      <article className='mt-8 max-w-6xl mx-auto grid gap-4 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3'>
         {events.map((event) => (
-          <Card key={event.id}>
-            <Event
-              title={event.title}
-              location={event.location}
-              date={event.date}
-              price={event.price}
-            />
-          </Card>
+          <Event
+            key={event.id}
+            title={event.title}
+            location={event.location}
+            venue={event.venue}
+            date={event.date}
+            price={event.price}
+          />
         ))}
-      </section> */}
+      </article>
     </section>
   );
 };
