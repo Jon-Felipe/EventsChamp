@@ -1,103 +1,45 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import styled from 'styled-components';
 
 const Header = () => {
   const UserLinks = () => {
     return (
-      <nav className='user-links'>
-        <Link to='/login' className='login'>
-          Login
-        </Link>
-        <Link to='/sign-up' className='sign-up'>
-          Sign Up
-        </Link>
+      <nav className='mt-4 sm:mt-0'>
+        <ul className='grid grid-cols-2 gap-x-4 sm:grid-cols-[150px_150px]'>
+          <li className='text-center bg-white p-2 rounded-md shadow-md'>
+            <Link to='/login' className='text-lg font-medium tracking-wider'>
+              Login
+            </Link>
+          </li>
+          <li className='bg-violet-500 p-2 text-center rounded-md shadow-md'>
+            <Link
+              to='/sign-up'
+              className='text-lg text-white font-medium tracking-wide'
+            >
+              Sign Up
+            </Link>
+          </li>
+        </ul>
       </nav>
     );
   };
 
   return (
-    <HeaderWrapper>
-      <div className='header'>
-        <div className='header-center'>
-          <h1>
-            <Link to='/'>EventsChamp</Link>
-          </h1>
-          <div className='toggle-btn'>
-            <button>
-              <FaTimes size='2.5rem' />
-            </button>
-          </div>
+    <header className='p-4 shadow-md'>
+      <div className='sm:flex sm:justify-between sm:items-center sm:max-w-6xl sm:mx-auto'>
+        <div className='flex items-center justify-between'>
+          <Link to='/' className='font-bold text-4xl'>
+            EventsChamps
+          </Link>
+          <button className='sm:hidden'>
+            <FaTimes size='2rem' />
+          </button>
         </div>
         <UserLinks />
       </div>
-    </HeaderWrapper>
+    </header>
   );
 };
 
 export default Header;
-
-const HeaderWrapper = styled.header`
-  padding: 1rem;
-  margin: 0 auto;
-  background-color: var(--white);
-  box-shadow: var(--shadow-1);
-  .header {
-    max-width: 1140px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .header-center {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .toggle-btn {
-    button {
-      background-color: transparent;
-      border: transparent;
-      cursor: pointer;
-    }
-  }
-  .user-links {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1rem;
-    a {
-      text-align: center;
-      padding: 0.8rem 1.5rem;
-      font-weight: 700;
-      background-color: transparent;
-      cursor: pointer;
-    }
-    .sign-up {
-      background-color: var(--primary-500);
-      color: var(--white);
-      border-radius: var(--borderRadius);
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .header-center {
-      h1 {
-        font-size: 2.5rem;
-      }
-    }
-    .toggle-btn {
-      display: none;
-    }
-    .user-links {
-      margin-top: 0;
-    }
-  }
-`;
