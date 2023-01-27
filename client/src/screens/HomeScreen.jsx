@@ -3,7 +3,6 @@ import React from 'react';
 // components
 import Select from '../components/UI/Select';
 import Event from '../components/Events/Event';
-import Card from '../components/UI/Card';
 
 // extras
 import { events } from '../utils/dummy-data';
