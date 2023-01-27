@@ -44,7 +44,7 @@ const Event = ({ id, title, location, date, venue, price, isFavourite }) => {
                 </div>
               )}
               <Link
-                to={`/${id}`}
+                to={`/event/${id}`}
                 className='bg-white rounded-full p-3 ml-3 hover:scale-125 ease-in-out duration-300'
               >
                 <FaArrowRight size='1.3rem' />

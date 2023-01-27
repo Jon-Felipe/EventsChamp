@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // screens
 import HomeScreen from './screens/HomeScreen';
+import EventScreen from './screens/EventScreen';
 
 // components
 import Header from './components/Layout/Header';
@@ -14,6 +15,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path='/' element={<HomeScreen />} />
+        <Route path='/event/:id' element={<EventScreen />} />
       </Routes>
       <Footer />
     </Router>
