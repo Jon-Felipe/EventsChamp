@@ -16,7 +16,7 @@ const HomeScreen = () => {
         <h3 className='text-4xl font-bold text-center sm:text-2xl md:text-3xl'>
           Upcoming Events
         </h3>
-        <div className='mt-8 grid grid-cols-3 gap-x-2 sm:mt-0 sm:grid-cols-[130px_130px_130px] md:grid-cols-[1fr_1fr_1fr]'>
+        <div className='mt-8 grid grid-cols-3 gap-x-2 sm:mt-0 md:gap-x-4'>
           <Select option='Weekdays' />
           <Select option='Event Type' />
           <Select option='Any Category' />
