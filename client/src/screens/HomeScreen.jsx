@@ -1,6 +1,7 @@
 import React from 'react';
 
 // components
+import Hero from '../components/Layout/Hero';
 import Select from '../components/UI/Select';
 import Event from '../components/Events/Event';
 
@@ -10,6 +11,10 @@ import { events } from '../utils/dummy-data';
 const HomeScreen = () => {
   return (
     <section className='p-4'>
+      {/* Hero Carousel */}
+      <article className='max-w-7xl mx-auto my-4 rounded-lg overflow-hidden'>
+        <Hero />
+      </article>
       {/* Events filter */}
       <article className='max-w-7xl mx-auto sm:flex sm:items-center sm:justify-between'>
         <h3 className='text-xl font-bold text-center md:text-3xl'>
