@@ -11,7 +11,7 @@ const HomeScreen = () => {
   return (
     <section className='p-4'>
       {/* Events filter */}
-      <article className='max-w-6xl mx-auto sm:flex sm:items-center sm:justify-between'>
+      <article className='max-w-7xl mx-auto sm:flex sm:items-center sm:justify-between'>
         <h3 className='text-xl font-bold text-center md:text-3xl'>
           Upcoming Events
         </h3>
