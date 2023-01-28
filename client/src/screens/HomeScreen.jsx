@@ -12,7 +12,7 @@ const HomeScreen = () => {
     <section className='p-4'>
       {/* Events filter */}
       <article className='max-w-6xl mx-auto sm:flex sm:items-center sm:justify-between'>
-        <h3 className='text-4xl font-bold text-center sm:text-2xl md:text-3xl'>
+        <h3 className='text-xl font-bold text-center md:text-3xl'>
           Upcoming Events
         </h3>
         <div className='mt-8 grid grid-cols-3 gap-x-2 sm:mt-0 md:gap-x-4'>
@@ -22,14 +22,13 @@ const HomeScreen = () => {
         </div>
       </article>
       {/* Event Cards */}
-      <article className='mt-8 max-w-6xl mx-auto grid gap-4 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3'>
+      <article className='mt-8 max-w-7xl mx-auto grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
         {events.map((event) => (
           <Event
             key={event.id}
             id={event.id}
             title={event.title}
             location={event.location}
-            venue={event.venue}
             date={event.date}
             price={event.price}
             isFavourite={event.isFavourite}
