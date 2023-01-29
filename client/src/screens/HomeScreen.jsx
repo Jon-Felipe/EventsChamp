@@ -10,11 +10,9 @@ import { events } from '../utils/dummy-data';
 
 const HomeScreen = () => {
   return (
-    <section className='p-4'>
+    <section>
       {/* Hero Carousel */}
-      <article className='max-w-7xl mx-auto my-4 rounded-lg overflow-hidden'>
-        <Hero />
-      </article>
+      <Hero />
       {/* Events filter */}
       <article className='max-w-7xl mx-auto sm:flex sm:items-center sm:justify-between'>
         <h3 className='text-xl font-bold text-center md:text-3xl'>

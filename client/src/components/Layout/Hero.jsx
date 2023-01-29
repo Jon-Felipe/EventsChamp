@@ -5,10 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/navigation';
-
-// import required modules
-import { Navigation } from 'swiper';
 
 // extras
 import eventImg1 from '../../assets/event-1.jpg';
@@ -17,14 +13,7 @@ import eventImg3 from '../../assets/event-3.jpg';
 
 const Hero = () => {
   return (
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={1}
-      loop
-      navigation
-      modules={[Navigation]}
-      className='mySwiper'
-    >
+    <Swiper spaceBetween={50} slidesPerView={1} loop className='mySwiper'>
       <SwiperSlide>
         <img src={eventImg1} alt='event 1' />
       </SwiperSlide>
