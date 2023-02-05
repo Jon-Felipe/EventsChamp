@@ -10,11 +10,11 @@ import { events } from '../utils/dummy-data';
 
 const HomeScreen = () => {
   return (
-    <section>
+    <main>
       {/* Hero Carousel */}
       <Hero />
       {/* Events filter */}
-      <article className='max-w-7xl mx-auto sm:flex sm:items-center sm:justify-between'>
+      <section className='max-w-7xl mx-auto sm:flex sm:items-center sm:justify-between'>
         <h3 className='text-xl font-bold text-center md:text-3xl'>
           Upcoming Events
         </h3>
@@ -23,9 +23,9 @@ const HomeScreen = () => {
           <Select option='Event Type' />
           <Select option='Any Category' />
         </div>
-      </article>
+      </section>
       {/* Event Cards */}
-      <article className='mt-8 max-w-7xl mx-auto grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+      <section className='mt-8 max-w-7xl mx-auto grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
         {events.map((event) => (
           <Event
             key={event.id}
@@ -37,8 +37,8 @@ const HomeScreen = () => {
             isFavourite={event.isFavourite}
           />
         ))}
-      </article>
-    </section>
+      </section>
+    </main>
   );
 };
 
