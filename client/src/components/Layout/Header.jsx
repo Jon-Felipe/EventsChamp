@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <header className='flex items-center justify-between h-20 px-5 max-w-7xl mx-auto xl:px-0'>
+    <header className='flex items-center justify-between h-20 px-5 max-w-7xl mx-auto 2xl:px-0'>
       <Link to='/' className='font-bold text-xl md:text-3xl'>
         EventsChamps
       </Link>
